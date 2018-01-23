@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  h1{
+    text-align: center;
+  }
+  #citylinks{
+    text-align: center;
+  }
+  ul li{
+    margin: auto, 0px
+    list-style: none;
+    display: inline-block;
+  }
+  .container {
+    width: 1000px;
+    padding: 20px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1> Dojo Weather Forecast</h1>
+  <div id="citylinks">
+  <ul>
+      <li><a [routerLink]="['seattle']">Seattle, WA</a></li>
+      <li>|</li>
+      <li><a [routerLink]="['/sanjose']">San Jose, CA</a></li>
+      <li>|</li>
+      <li><a [routerLink]="['/burbank']">Burbank, CA</a></li>
+      <li>|</li>
+      <li><a [routerLink]="['/dallas']"> Dallas, TX</a></li>
+      <li>|</li>
+      <li><a [routerLink]="['/dc']"> Washington, DC</a></li>
+      <li>|</li>
+      <li><a [routerLink]="['/chicago']"> Chicago, IL</a></li>
+  </ul>
+  <router-outlet></router-outlet>
+  </div>
+</div>
+</body>
+</html>
+
